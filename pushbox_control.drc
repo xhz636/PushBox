@@ -1,0 +1,93 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Jan 12 15:35:22 2016
+
+drc -z PushBox_Control.ncd PushBox_Control.pcf
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOA1> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA2> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA3> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA9> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA10> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA11> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA17> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA18> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+   lid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram.A>:<RAMB16_RAMB16A>.
+DRC detected 0 errors and 28 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

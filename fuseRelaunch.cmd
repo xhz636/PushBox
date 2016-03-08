@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "E:/logic/Final/PushBox/VGA_Scan_test_isim_beh.exe" -prj "E:/logic/Final/PushBox/VGA_Scan_test_beh.prj" "work.VGA_Scan_test" "work.glbl" 

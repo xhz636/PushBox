@@ -1,0 +1,28 @@
+Command line:
+   PS2_KeyBoard_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56445
+
+Thu Jan 14 16:18:49 2016
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 840.798 Meg
+
+ Total Signals          : 22
+ Total Nets             : 29
+ Total Signal Drivers   : 12
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 20
+ Total Traceable Variables  : 33
+ Total Scalar Nets and Variables : 143
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 1155.39 Meg
+
+Thu Jan 14 16:19:21 2016
+

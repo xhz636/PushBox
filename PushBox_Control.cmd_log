@@ -1,0 +1,250 @@
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox/PushBox_Control.xst" -ofn "E:/logic/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/PushBox/PushBox_Control.xst" -ofn "E:/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/logic/cnt/PushBox/PushBox_Control.xst" -ofn "E:/logic/cnt/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/logic/PushBox_test/PushBox_Control.xst" -ofn "E:/logic/PushBox_test/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/logic/PushBox_test/PushBox_Control.xst" -ofn "E:/logic/PushBox_test/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox_test/PushBox_Control.xst" -ofn "E:/logic/PushBox_test/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/logic/PushBox_test/PushBox_Control.xst" -ofn "E:/logic/PushBox_test/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/logic/PushBox_test/PushBox_Control.xst" -ofn "E:/logic/PushBox_test/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox_test/PushBox_Control.xst" -ofn "E:/logic/PushBox_test/PushBox_Control.syr" 
+xst -intstyle ise -ifn "E:/logic/PushBox_test/PushBox_Control.xst" -ofn "E:/logic/PushBox_test/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/logic/PushBox_test/PushBox_Control.xst" -ofn "E:/logic/PushBox_test/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/logic/PushBox_test/PushBox_Control.xst" -ofn "E:/logic/PushBox_test/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/new/PushBox_test/PushBox_Control.xst" -ofn "E:/new/PushBox_test/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/new/PushBox_test/PushBox_Control.xst" -ofn "E:/new/PushBox_test/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/Win_Done/PushBox/PushBox_Control.xst" -ofn "E:/Win_Done/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/Win_Done/PushBox/PushBox_Control.xst" -ofn "E:/Win_Done/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/Final/PushBox/PushBox_Control.xst" -ofn "E:/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/Final/PushBox/PushBox_Control.xst" -ofn "E:/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/Final/PushBox/PushBox_Control.xst" -ofn "E:/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/Final/PushBox/PushBox_Control.xst" -ofn "E:/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/logic/Final/PushBox/PushBox_Control.xst" -ofn "E:/logic/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+xst -intstyle ise -ifn "E:/logic/Final/PushBox/PushBox_Control.xst" -ofn "E:/logic/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/logic/Final/PushBox/PushBox_Control.xst" -ofn "E:/logic/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/Final/PushBox/PushBox_Control.xst" -ofn "E:/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/Final/PushBox/PushBox_Control.xst" -ofn "E:/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 
+xst -intstyle ise -ifn "E:/Final/PushBox/PushBox_Control.xst" -ofn "E:/Final/PushBox/PushBox_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc test.ucf -p xc3s200-ft256-5 PushBox_Control.ngc PushBox_Control.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o PushBox_Control_map.ncd PushBox_Control.ngd PushBox_Control.pcf 
+par -w -intstyle ise -ol high -t 1 PushBox_Control_map.ncd PushBox_Control.ncd PushBox_Control.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PushBox_Control.twx PushBox_Control.ncd -o PushBox_Control.twr PushBox_Control.pcf -ucf test.ucf 
+bitgen -intstyle ise -f PushBox_Control.ut PushBox_Control.ncd 

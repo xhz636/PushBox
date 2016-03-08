@@ -1,0 +1,1294 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: PushBox_Control.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PushBox_Control.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PushBox_Control"
+Output Format                      : NGC
+Target Device                      : xc3s200-5-ft256
+
+---- Source Options
+Top Module Name                    : PushBox_Control
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "MUX4T1_4.vf" in library work
+Compiling verilog file "VGA_Scan.v" in library work
+Module <MUX4T1_4> compiled
+Compiling verilog file "VGA_Color.v" in library work
+Module <VGA_Scan> compiled
+Compiling verilog file "Scan_Code_ASCII.v" in library work
+Module <VGA_Color> compiled
+Compiling verilog file "ScanSync.vf" in library work
+Module <Scan_Code_ASCII> compiled
+Module <MUX4T1_4_MUSER_ScanSync> compiled
+Compiling verilog file "PS2_Keyboard.v" in library work
+Module <ScanSync> compiled
+Compiling verilog file "MC14495_ZJU_sch.vf" in library work
+Module <PS2_Keyboard> compiled
+Compiling verilog file "ipcore_dir/VRAM.v" in library work
+Module <MC14495_ZJU_sch> compiled
+Compiling verilog file "ipcore_dir/Picture.v" in library work
+Module <VRAM> compiled
+Compiling verilog file "ipcore_dir/Level.v" in library work
+Module <Picture> compiled
+Compiling verilog file "ipcore_dir/GRAM.v" in library work
+Module <Level> compiled
+Compiling verilog file "ipcore_dir/ASCII.v" in library work
+Module <GRAM> compiled
+Compiling verilog file "VRAM_Input.v" in library work
+Module <ASCII> compiled
+Compiling verilog file "VRAM_Clear.v" in library work
+Module <VRAM_Input> compiled
+Compiling verilog file "VGA_Show.v" in library work
+Module <VRAM_Clear> compiled
+Compiling verilog file "Seg7_Dev.vf" in library work
+Module <VGA_Show> compiled
+Module <MUX4T1_4_MUSER_Seg7_Dev> compiled
+Module <ScanSync_MUSER_Seg7_Dev> compiled
+Module <MC14495_ZJU_sch_MUSER_Seg7_Dev> compiled
+Compiling verilog file "Read_Index.v" in library work
+Module <Seg7_Dev> compiled
+Compiling verilog file "PS2_Read.v" in library work
+Module <Read_Index> compiled
+Compiling verilog file "Move.v" in library work
+Module <PS2_Read> compiled
+Compiling verilog file "Load_Level.v" in library work
+Module <Move> compiled
+Compiling verilog file "PushBox_Control.v" in library work
+Module <Load_Level> compiled
+Module <PushBox_Control> compiled
+No errors in compilation
+Analysis of file <"PushBox_Control.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <PushBox_Control> in library <work> with parameters.
+	Key_Back = "00001000"
+	Key_Down = "00011111"
+	Key_Enter = "00001101"
+	Key_Esc = "00011011"
+	Key_Left = "00011101"
+	Key_Right = "00011100"
+	Key_Up = "00011110"
+	Move_Down = "01"
+	Move_Left = "10"
+	Move_Right = "11"
+	Move_Up = "00"
+
+Analyzing hierarchy for module <VRAM_Clear> in library <work>.
+
+Analyzing hierarchy for module <VRAM_Input> in library <work>.
+
+Analyzing hierarchy for module <Read_Index> in library <work>.
+
+Analyzing hierarchy for module <Load_Level> in library <work>.
+
+Analyzing hierarchy for module <Move> in library <work> with parameters.
+	Move_Boxin_Hole = "101"
+	Move_Boxin_Road = "100"
+	Move_Boxout_Hole = "011"
+	Move_Boxout_Road = "010"
+	Move_Down = "01"
+	Move_Fail = "110"
+	Move_Hole = "001"
+	Move_Left = "10"
+	Move_Right = "11"
+	Move_Road = "000"
+	Move_Up = "00"
+	Pic_Boxin = "1001"
+	Pic_Boxout = "1000"
+	Pic_Hole = "0110"
+	Pic_Person = "0100"
+	Pic_Road = "0101"
+
+Analyzing hierarchy for module <Seg7_Dev> in library <work>.
+
+Analyzing hierarchy for module <PS2_Read> in library <work>.
+
+Analyzing hierarchy for module <VGA_Show> in library <work>.
+
+Analyzing hierarchy for module <MC14495_ZJU_sch_MUSER_Seg7_Dev> in library <work>.
+
+Analyzing hierarchy for module <ScanSync_MUSER_Seg7_Dev> in library <work>.
+
+Analyzing hierarchy for module <PS2_Keyboard> in library <work>.
+
+Analyzing hierarchy for module <Scan_Code_ASCII> in library <work> with parameters.
+	Scan_0 = "01000101"
+	Scan_1 = "00010110"
+	Scan_2 = "00011110"
+	Scan_3 = "00100110"
+	Scan_4 = "00100101"
+	Scan_5 = "00101110"
+	Scan_6 = "00110110"
+	Scan_7 = "00111101"
+	Scan_8 = "00111110"
+	Scan_9 = "01000110"
+	Scan_A = "00011100"
+	Scan_B = "00110010"
+	Scan_Back = "01100110"
+	Scan_C = "00100001"
+	Scan_D = "00100011"
+	Scan_Down = "01110010"
+	Scan_E = "00100100"
+	Scan_Enter = "01011010"
+	Scan_Esc = "01110110"
+	Scan_F = "00101011"
+	Scan_G = "00110100"
+	Scan_H = "00110011"
+	Scan_I = "01000011"
+	Scan_J = "00111011"
+	Scan_K = "01000010"
+	Scan_L = "01001011"
+	Scan_Left = "01101011"
+	Scan_M = "00111010"
+	Scan_N = "00110001"
+	Scan_O = "01000100"
+	Scan_P = "01001101"
+	Scan_Q = "00010101"
+	Scan_R = "00101101"
+	Scan_Right = "01110100"
+	Scan_S = "00011011"
+	Scan_Space = "00101001"
+	Scan_T = "00101100"
+	Scan_U = "00111100"
+	Scan_Up = "01110101"
+	Scan_V = "00101010"
+	Scan_W = "00011101"
+	Scan_X = "00100010"
+	Scan_Y = "00110101"
+	Scan_Z = "00011010"
+
+Analyzing hierarchy for module <VGA_Scan> in library <work>.
+
+Analyzing hierarchy for module <VGA_Color> in library <work>.
+
+Analyzing hierarchy for module <MUX4T1_4_MUSER_Seg7_Dev> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <PushBox_Control>.
+	Key_Back = 8'b00001000
+	Key_Down = 8'b00011111
+	Key_Enter = 8'b00001101
+	Key_Esc = 8'b00011011
+	Key_Left = 8'b00011101
+	Key_Right = 8'b00011100
+	Key_Up = 8'b00011110
+	Move_Down = 2'b01
+	Move_Left = 2'b10
+	Move_Right = 2'b11
+	Move_Up = 2'b00
+Module <PushBox_Control> is correct for synthesis.
+ 
+Analyzing module <VRAM_Clear> in library <work>.
+Module <VRAM_Clear> is correct for synthesis.
+ 
+Analyzing module <VRAM_Input> in library <work>.
+Module <VRAM_Input> is correct for synthesis.
+ 
+Analyzing module <Read_Index> in library <work>.
+Module <Read_Index> is correct for synthesis.
+ 
+Analyzing module <Load_Level> in library <work>.
+WARNING:Xst:2211 - "ipcore_dir/Level.v" line 93: Instantiating black box module <Level>.
+Module <Load_Level> is correct for synthesis.
+ 
+Analyzing module <Move> in library <work>.
+	Move_Boxin_Hole = 3'b101
+	Move_Boxin_Road = 3'b100
+	Move_Boxout_Hole = 3'b011
+	Move_Boxout_Road = 3'b010
+	Move_Down = 2'b01
+	Move_Fail = 3'b110
+	Move_Hole = 3'b001
+	Move_Left = 2'b10
+	Move_Right = 2'b11
+	Move_Road = 3'b000
+	Move_Up = 2'b00
+	Pic_Boxin = 4'b1001
+	Pic_Boxout = 4'b1000
+	Pic_Hole = 4'b0110
+	Pic_Person = 4'b0100
+	Pic_Road = 4'b0101
+Module <Move> is correct for synthesis.
+ 
+Analyzing module <Seg7_Dev> in library <work>.
+Module <Seg7_Dev> is correct for synthesis.
+ 
+Analyzing module <MC14495_ZJU_sch_MUSER_Seg7_Dev> in library <work>.
+Module <MC14495_ZJU_sch_MUSER_Seg7_Dev> is correct for synthesis.
+ 
+Analyzing module <ScanSync_MUSER_Seg7_Dev> in library <work>.
+Module <ScanSync_MUSER_Seg7_Dev> is correct for synthesis.
+ 
+Analyzing module <MUX4T1_4_MUSER_Seg7_Dev> in library <work>.
+Module <MUX4T1_4_MUSER_Seg7_Dev> is correct for synthesis.
+ 
+Analyzing module <PS2_Read> in library <work>.
+Module <PS2_Read> is correct for synthesis.
+ 
+Analyzing module <PS2_Keyboard> in library <work>.
+Module <PS2_Keyboard> is correct for synthesis.
+ 
+Analyzing module <Scan_Code_ASCII> in library <work>.
+	Scan_0 = 8'b01000101
+	Scan_1 = 8'b00010110
+	Scan_2 = 8'b00011110
+	Scan_3 = 8'b00100110
+	Scan_4 = 8'b00100101
+	Scan_5 = 8'b00101110
+	Scan_6 = 8'b00110110
+	Scan_7 = 8'b00111101
+	Scan_8 = 8'b00111110
+	Scan_9 = 8'b01000110
+	Scan_A = 8'b00011100
+	Scan_B = 8'b00110010
+	Scan_Back = 8'b01100110
+	Scan_C = 8'b00100001
+	Scan_D = 8'b00100011
+	Scan_Down = 8'b01110010
+	Scan_E = 8'b00100100
+	Scan_Enter = 8'b01011010
+	Scan_Esc = 8'b01110110
+	Scan_F = 8'b00101011
+	Scan_G = 8'b00110100
+	Scan_H = 8'b00110011
+	Scan_I = 8'b01000011
+	Scan_J = 8'b00111011
+	Scan_K = 8'b01000010
+	Scan_L = 8'b01001011
+	Scan_Left = 8'b01101011
+	Scan_M = 8'b00111010
+	Scan_N = 8'b00110001
+	Scan_O = 8'b01000100
+	Scan_P = 8'b01001101
+	Scan_Q = 8'b00010101
+	Scan_R = 8'b00101101
+	Scan_Right = 8'b01110100
+	Scan_S = 8'b00011011
+	Scan_Space = 8'b00101001
+	Scan_T = 8'b00101100
+	Scan_U = 8'b00111100
+	Scan_Up = 8'b01110101
+	Scan_V = 8'b00101010
+	Scan_W = 8'b00011101
+	Scan_X = 8'b00100010
+	Scan_Y = 8'b00110101
+	Scan_Z = 8'b00011010
+Module <Scan_Code_ASCII> is correct for synthesis.
+ 
+Analyzing module <VGA_Show> in library <work>.
+INFO:Xst:1432 - Contents of array <VColor> may be accessed with a negative index, causing simulation mismatch.
+WARNING:Xst:2211 - "ipcore_dir/VRAM.v" line 95: Instantiating black box module <VRAM>.
+WARNING:Xst:2211 - "ipcore_dir/GRAM.v" line 98: Instantiating black box module <GRAM>.
+WARNING:Xst:2211 - "ipcore_dir/ASCII.v" line 108: Instantiating black box module <ASCII>.
+WARNING:Xst:2211 - "ipcore_dir/Picture.v" line 111: Instantiating black box module <Picture>.
+Module <VGA_Show> is correct for synthesis.
+ 
+Analyzing module <VGA_Scan> in library <work>.
+Module <VGA_Scan> is correct for synthesis.
+ 
+Analyzing module <VGA_Color> in library <work>.
+Module <VGA_Color> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <VRAM_Clear>.
+    Related source file is "VRAM_Clear.v".
+    Found 11-bit register for signal <Addr>.
+    Found 11-bit adder for signal <Addr$addsub0000> created at line 54.
+    Found 1-bit register for signal <done_flag>.
+    Found 1-bit register for signal <wea_flag>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <VRAM_Clear> synthesized.
+
+
+Synthesizing Unit <VRAM_Input>.
+    Related source file is "VRAM_Input.v".
+    Found finite state machine <FSM_0> for signal <timing>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 3                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (falling_edge)       |
+    | Clock enable       | timing$not0000            (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit register for signal <Addr>.
+    Found 11-bit comparator greater for signal <Addr$cmp_gt0000> created at line 53.
+    Found 11-bit addsub for signal <Addr$share0000> created at line 51.
+    Found 1-bit register for signal <done_flag>.
+    Found 8-bit register for signal <VDout>.
+    Found 1-bit register for signal <wea_flag>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <VRAM_Input> synthesized.
+
+
+Synthesizing Unit <Read_Index>.
+    Related source file is "Read_Index.v".
+    Found finite state machine <FSM_1> for signal <timing>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | timing$or0000             (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:643 - "Read_Index.v" line 112: The result of a 7x4-bit multiplication is partially used. Only the 7 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit register for signal <done_flag>.
+    Found 7-bit up counter for signal <index_flag>.
+    Found 7-bit subtractor for signal <index_flag$addsub0000> created at line 112.
+    Found 7-bit comparator greatequal for signal <index_flag$cmp_ge0000> created at line 190.
+    Found 8-bit comparator greater for signal <index_flag$cmp_gt0000> created at line 111.
+    Found 7-bit comparator greater for signal <index_flag$cmp_gt0001> created at line 104.
+    Found 8-bit comparator less for signal <index_flag$cmp_lt0000> created at line 111.
+    Found 7x4-bit multiplier for signal <index_flag$mult0001> created at line 112.
+    Found 7-bit addsub for signal <index_flag$share0000>.
+    Found 1-bit register for signal <is_index_flag>.
+    Found 1-bit register for signal <is_rank_flag>.
+    Found 1-bit register for signal <is_version_flag>.
+    Found 1-bit register for signal <load_next_flag>.
+    Found 4-bit register for signal <name_cnt>.
+    Found 4-bit adder for signal <name_cnt$addsub0000> created at line 109.
+    Found 64-bit register for signal <name_flag>.
+    Found 1-bit register for signal <rea_flag>.
+    Found 1-bit register for signal <string_end_flag>.
+    Found 8-bit comparator greatequal for signal <string_end_flag$cmp_ge0000> created at line 111.
+    Found 8-bit comparator lessequal for signal <string_end_flag$cmp_le0000> created at line 111.
+    Found 11-bit register for signal <VAddr_flag>.
+    Found 11-bit adder for signal <VAddr_flag$share0000>.
+    Found 8-bit register for signal <VData_flag>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  83 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   6 Comparator(s).
+Unit <Read_Index> synthesized.
+
+
+Synthesizing Unit <Move>.
+    Related source file is "Move.v".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <read_timing> of Case statement line 102 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <read_timing> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <read_timing>.
+    Using one-hot encoding for signal <write_timing>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <write_timing> of Case statement line 220 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <write_timing> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <write_timing> of Case statement line 220 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <write_timing> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <move_case>.
+    Found 4-bit adder for signal <$add0000> created at line 281.
+    Found 4-bit adder for signal <$add0001> created at line 284.
+    Found 4-bit adder for signal <$add0002> created at line 287.
+    Found 16-bit adder for signal <$add0003> created at line 289.
+    Found 1-bit register for signal <can_move>.
+    Found 2-bit register for signal <direction_flag>.
+    Found 9-bit register for signal <GAddr_r_flag>.
+    Found 9-bit adder for signal <GAddr_r_flag$add0000> created at line 107.
+    Found 9-bit adder for signal <GAddr_r_flag$add0001> created at line 109.
+    Found 9-bit adder for signal <GAddr_r_flag$add0002> created at line 129.
+    Found 9-bit adder for signal <GAddr_r_flag$add0003> created at line 131.
+    Found 9-bit subtractor for signal <GAddr_r_flag$sub0000> created at line 106.
+    Found 9-bit subtractor for signal <GAddr_r_flag$sub0001> created at line 108.
+    Found 9-bit subtractor for signal <GAddr_r_flag$sub0002> created at line 128.
+    Found 9-bit subtractor for signal <GAddr_r_flag$sub0003> created at line 130.
+    Found 9-bit register for signal <GAddr_w_flag>.
+    Found 4-bit register for signal <GData_w_flag>.
+    Found 8-bit updown counter for signal <hole_cnt>.
+    Found 7-bit register for signal <move_case>.
+    Found 1-bit register for signal <move_done_flag>.
+    Found 4-bit register for signal <one_step>.
+    Found 9-bit register for signal <Person_Addr>.
+    Found 1-bit register for signal <rea_flag>.
+    Found 1-bit register for signal <read_done_flag>.
+    Found 8-bit register for signal <read_timing>.
+    Found 1-bit register for signal <stand_in_hole_next>.
+    Found 1-bit register for signal <stand_in_hole_now>.
+    Found 16-bit register for signal <step_flag>.
+    Found 1-bit register for signal <step_read_done>.
+    Found 4-bit register for signal <two_step>.
+    Found 1-bit register for signal <wea_flag>.
+    Found 1-bit register for signal <win_flag>.
+    Found 7-bit register for signal <write_timing>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  79 D-type flip-flop(s).
+	inferred  12 Adder/Subtractor(s).
+Unit <Move> synthesized.
+
+
+Synthesizing Unit <PS2_Keyboard>.
+    Related source file is "PS2_Keyboard.v".
+    Found 4-bit up counter for signal <cnt>.
+    Found 10-bit register for signal <data>.
+    Found 8-bit register for signal <data_in>.
+    Found 1-bit register for signal <key_break>.
+    Found 1-bit register for signal <key_done>.
+    Found 1-bit register for signal <key_expand>.
+    Found 1-bit register for signal <negedge_ps2_clk_shift>.
+    Found 1-bit register for signal <ps2_clk_sign0>.
+    Found 1-bit register for signal <ps2_clk_sign1>.
+    Found 1-bit register for signal <ps2_clk_sign2>.
+    Found 1-bit register for signal <ps2_clk_sign3>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  26 D-type flip-flop(s).
+Unit <PS2_Keyboard> synthesized.
+
+
+Synthesizing Unit <Scan_Code_ASCII>.
+    Related source file is "Scan_Code_ASCII.v".
+    Found 8-bit register for signal <data_ascii>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Scan_Code_ASCII> synthesized.
+
+
+Synthesizing Unit <VGA_Scan>.
+    Related source file is "VGA_Scan.v".
+    Found 10-bit subtractor for signal <pixel_x>.
+    Found 10-bit subtractor for signal <pixel_y>.
+    Found 10-bit comparator greatequal for signal <HS>.
+    Found 10-bit comparator greatequal for signal <VS>.
+    Found 10-bit up counter for signal <h_count>.
+    Found 10-bit up counter for signal <v_count>.
+    Found 1-bit register for signal <vga_clk>.
+    Found 10-bit comparator greatequal for signal <video_out$cmp_ge0000> created at line 69.
+    Found 10-bit comparator greatequal for signal <video_out$cmp_ge0001> created at line 69.
+    Found 10-bit comparator less for signal <video_out$cmp_lt0000> created at line 69.
+    Found 10-bit comparator less for signal <video_out$cmp_lt0001> created at line 69.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <VGA_Scan> synthesized.
+
+
+Synthesizing Unit <VGA_Color>.
+    Related source file is "VGA_Color.v".
+Unit <VGA_Color> synthesized.
+
+
+Synthesizing Unit <Load_Level>.
+    Related source file is "Load_Level.v".
+WARNING:Xst:643 - "Load_Level.v" line 75: The result of a 7x9-bit multiplication is partially used. Only the 15 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 9-bit subtractor for signal <GAddr>.
+    Found 9-bit register for signal <Addr>.
+    Found 9-bit adder for signal <Addr$addsub0000> created at line 83.
+    Found 15-bit register for signal <Addr_offset>.
+    Found 7x9-bit multiplier for signal <Addr_offset$mult0001> created at line 75.
+    Found 1-bit register for signal <done_flag>.
+    Found 8-bit up counter for signal <hole_cnt>.
+    Found 15-bit adder for signal <Level_Addr>.
+    Found 9-bit register for signal <Person_Addr>.
+    Found 1-bit register for signal <wea_flag>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <Load_Level> synthesized.
+
+
+Synthesizing Unit <PS2_Read>.
+    Related source file is "PS2_Read.v".
+    Found 8-bit register for signal <ascii>.
+    Found 5-bit register for signal <ready_shift>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+Unit <PS2_Read> synthesized.
+
+
+Synthesizing Unit <VGA_Show>.
+    Related source file is "VGA_Show.v".
+WARNING:Xst:646 - Signal <video_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:643 - "VGA_Show.v" line 87: The result of a 32x6-bit multiplication is partially used. Only the 11 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "VGA_Show.v" line 88: The result of a 10x5-bit multiplication is partially used. Only the 9 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit 16-to-1 multiplexer for signal <$varindex0000> created at line 80.
+    Found 10-bit adder for signal <ASCII_Addr>.
+    Found 6-bit subtractor for signal <ascii_offset>.
+    Found 8-bit comparator less for signal <ascii_offset$cmp_lt0000> created at line 101.
+    Found 1-bit register for signal <blink>.
+    Found 25-bit up counter for signal <cnt>.
+    Found 9-bit adder for signal <GAddr_VGA>.
+    Found 10x5-bit multiplier for signal <GAddr_VGA$mult0001> created at line 88.
+    Found 14-bit adder for signal <Picture_Addr>.
+    Found 14-bit adder for signal <Picture_Addr$addsub0000> created at line 105.
+    Found 11-bit adder for signal <VAddr_VGA>.
+    Found 32x6-bit multiplier for signal <VAddr_VGA$mult0001> created at line 87.
+    Found 12-bit subtractor for signal <VAddr_VGA$sub0000> created at line 87.
+    Found 11-bit comparator equal for signal <VColor_in$cmp_eq0000> created at line 83.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <VGA_Show> synthesized.
+
+
+Synthesizing Unit <MC14495_ZJU_sch_MUSER_Seg7_Dev>.
+    Related source file is "Seg7_Dev.vf".
+Unit <MC14495_ZJU_sch_MUSER_Seg7_Dev> synthesized.
+
+
+Synthesizing Unit <MUX4T1_4_MUSER_Seg7_Dev>.
+    Related source file is "Seg7_Dev.vf".
+Unit <MUX4T1_4_MUSER_Seg7_Dev> synthesized.
+
+
+Synthesizing Unit <ScanSync_MUSER_Seg7_Dev>.
+    Related source file is "Seg7_Dev.vf".
+WARNING:Xst:646 - Signal <o<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ScanSync_MUSER_Seg7_Dev> synthesized.
+
+
+Synthesizing Unit <Seg7_Dev>.
+    Related source file is "Seg7_Dev.vf".
+Unit <Seg7_Dev> synthesized.
+
+
+Synthesizing Unit <PushBox_Control>.
+    Related source file is "PushBox_Control.v".
+WARNING:Xst:646 - Signal <done> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <clear_flag>.
+    Found 2-bit register for signal <clear_sign>.
+    Found 19-bit up counter for signal <clkcnt>.
+    Found 2-bit register for signal <direction_flag>.
+    Found 1-bit register for signal <exit_map>.
+    Found 1-bit register for signal <index_flag>.
+    Found 1-bit register for signal <input_flag>.
+    Found 8-bit comparator greatequal for signal <input_flag$cmp_ge0000> created at line 85.
+    Found 8-bit comparator less for signal <input_flag$cmp_lt0000> created at line 85.
+    Found 2-bit register for signal <Load_done_sign>.
+    Found 1-bit register for signal <mode_flag>.
+    Found 20-bit up counter for signal <mode_shift>.
+    Found 1-bit register for signal <move_flag>.
+    Found 2-bit register for signal <Read_done_sign>.
+    Found 1-bit register for signal <restart_flag>.
+    Found 2-bit register for signal <win_out_sign>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <PushBox_Control> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 10x5-bit multiplier                                   : 1
+ 32x6-bit multiplier                                   : 1
+ 7x4-bit multiplier                                    : 1
+ 7x9-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 31
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 3
+ 11-bit addsub                                         : 1
+ 12-bit subtractor                                     : 1
+ 14-bit adder                                          : 2
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 4-bit adder                                           : 4
+ 5-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 7-bit addsub                                          : 1
+ 7-bit subtractor                                      : 1
+ 9-bit adder                                           : 6
+ 9-bit subtractor                                      : 5
+# Counters                                             : 9
+ 10-bit up counter                                     : 2
+ 19-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 155
+ 1-bit register                                        : 127
+ 10-bit register                                       : 1
+ 11-bit register                                       : 3
+ 15-bit register                                       : 1
+ 2-bit register                                        : 6
+ 4-bit register                                        : 4
+ 5-bit register                                        : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 5
+ 9-bit register                                        : 5
+# Comparators                                          : 17
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator less                                : 2
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 1
+ 7-bit comparator greatequal                           : 1
+ 7-bit comparator greater                              : 1
+ 8-bit comparator greatequal                           : 2
+ 8-bit comparator greater                              : 1
+ 8-bit comparator less                                 : 3
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 1-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <VRAM_3/timing/FSM> on signal <timing[1:5]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00001
+ 001   | 00010
+ 010   | 00100
+ 011   | 01000
+ 100   | 10000
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <VRAM_2/timing/FSM> on signal <timing[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 001
+ 01    | 010
+ 10    | 100
+-------------------
+Reading core <ipcore_dir/Level.ngc>.
+Reading core <ipcore_dir/VRAM.ngc>.
+Reading core <ipcore_dir/GRAM.ngc>.
+Reading core <ipcore_dir/ASCII.ngc>.
+Reading core <ipcore_dir/Picture.ngc>.
+Loading core <Level> for timing and area information for instance <LM1>.
+Loading core <VRAM> for timing and area information for instance <RAM1>.
+Loading core <GRAM> for timing and area information for instance <RAM2>.
+Loading core <ASCII> for timing and area information for instance <ROM1>.
+Loading core <Picture> for timing and area information for instance <ROM2>.
+WARNING:Xst:1710 - FF/Latch <VDout_7> (without init value) has a constant value of 0 in block <VRAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_ascii_7> (without init value) has a constant value of 0 in block <PS2_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ascii_7> (without init value) has a constant value of 0 in block <PS2_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <move_case_6> of sequential type is unconnected in block <GRAM_2>.
+WARNING:Xst:2404 -  FFs/Latches <data_ascii<7:7>> (without init value) have a constant value of 0 in block <Scan_Code_ASCII>.
+WARNING:Xst:2677 - Node <move_case_6> of sequential type is unconnected in block <Move>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# Multipliers                                          : 4
+ 10x5-bit multiplier                                   : 1
+ 32x6-bit multiplier                                   : 1
+ 7x4-bit multiplier                                    : 1
+ 7x9-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 31
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 3
+ 11-bit addsub                                         : 1
+ 12-bit subtractor                                     : 1
+ 14-bit adder                                          : 2
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 4-bit adder                                           : 5
+ 6-bit subtractor                                      : 1
+ 7-bit addsub                                          : 1
+ 7-bit subtractor                                      : 1
+ 9-bit adder                                           : 6
+ 9-bit subtractor                                      : 5
+# Counters                                             : 9
+ 10-bit up counter                                     : 2
+ 19-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 306
+ Flip-Flops                                            : 306
+# Comparators                                          : 17
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator less                                : 2
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 1
+ 7-bit comparator greatequal                           : 1
+ 7-bit comparator greater                              : 1
+ 8-bit comparator greatequal                           : 2
+ 8-bit comparator greater                              : 1
+ 8-bit comparator less                                 : 3
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 1-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_init.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_init.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_init.ram/dpram.dp2x2.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_init.ram/dpram.dp2x2.ram of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp2x2.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp2x2.ram of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp1x1.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp1x1.ram of type RAMB16_S1_S1 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram of type RAMB16_S9_S9 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram of type RAMB16_S18_S18 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp4x4.ram of type RAMB16_S4_S4 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp2x2.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp2x2.ram of type RAMB16_S2_S2 has been replaced by RAMB16
+
+Optimizing unit <PushBox_Control> ...
+
+Optimizing unit <PS2_Keyboard> ...
+
+Optimizing unit <Scan_Code_ASCII> ...
+
+Optimizing unit <VGA_Scan> ...
+
+Optimizing unit <Load_Level> ...
+
+Optimizing unit <MC14495_ZJU_sch_MUSER_Seg7_Dev> ...
+
+Optimizing unit <MUX4T1_4_MUSER_Seg7_Dev> ...
+
+Optimizing unit <VRAM_Clear> ...
+
+Optimizing unit <VRAM_Input> ...
+
+Optimizing unit <Read_Index> ...
+
+Optimizing unit <Move> ...
+
+Optimizing unit <PS2_Read> ...
+
+Optimizing unit <VGA_Show> ...
+WARNING:Xst:1710 - FF/Latch <VRAM_2/VDout_7> (without init value) has a constant value of 0 in block <PushBox_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PS2_Top/ascii_7> (without init value) has a constant value of 0 in block <PushBox_Control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <VRAM_3/is_version_flag> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/is_rank_flag> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_0> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_1> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_2> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_3> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_5> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_6> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_4> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_8> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_9> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_7> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_11> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_12> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_10> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_13> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_14> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_16> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_17> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_15> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_19> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_20> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_18> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_22> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_23> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_21> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_24> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_25> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_27> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_28> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_26> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_30> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_31> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_29> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_33> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_34> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_32> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_35> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_36> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_38> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_39> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_37> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_41> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_42> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_40> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_44> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_45> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_43> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_46> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_47> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_49> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_50> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_48> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_52> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_53> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_51> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_55> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_56> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_54> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_57> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_58> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_60> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_61> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_59> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_63> of sequential type is unconnected in block <PushBox_Control>.
+WARNING:Xst:2677 - Node <VRAM_3/name_flag_62> of sequential type is unconnected in block <PushBox_Control>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PushBox_Control, actual ratio is 32.
+FlipFlop VRAM_2/wea_flag has been replicated 2 time(s)
+FlipFlop VRAM_3/index_flag_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 369
+ Flip-Flops                                            : 369
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PushBox_Control.ngr
+Top Level Output File Name         : PushBox_Control
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 1604
+#      AND2                        : 61
+#      AND3                        : 11
+#      AND4                        : 9
+#      BUF                         : 2
+#      GND                         : 18
+#      INV                         : 29
+#      LUT1                        : 102
+#      LUT2                        : 163
+#      LUT2_D                      : 10
+#      LUT2_L                      : 7
+#      LUT3                        : 168
+#      LUT3_D                      : 15
+#      LUT3_L                      : 11
+#      LUT4                        : 481
+#      LUT4_D                      : 35
+#      LUT4_L                      : 42
+#      MULT_AND                    : 7
+#      MUXCY                       : 162
+#      MUXF5                       : 78
+#      MUXF6                       : 2
+#      MUXF7                       : 1
+#      OR2                         : 7
+#      OR3                         : 3
+#      OR4                         : 16
+#      VCC                         : 6
+#      XORCY                       : 158
+# FlipFlops/Latches                : 373
+#      FD                          : 1
+#      FDC                         : 79
+#      FDCE                        : 159
+#      FDCE_1                      : 27
+#      FDCPE                       : 9
+#      FDE                         : 68
+#      FDPE                        : 18
+#      FDPE_1                      : 11
+#      FDR                         : 1
+# RAMS                             : 12
+#      RAMB16                      : 12
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 3
+#      OBUF                        : 17
+# MULTs                            : 4
+#      MULT18X18                   : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-5 
+
+ Number of Slices:                      557  out of   1920    29%  
+ Number of Slice Flip Flops:            373  out of   3840     9%  
+ Number of 4 input LUTs:               1063  out of   3840    27%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    173    12%  
+ Number of BRAMs:                        12  out of     12   100%  
+ Number of MULT18X18s:                    4  out of     12    33%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                                                                                                                               | Load  |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                                                                                                                                               | 358   |
+GRAM_1/LM1/N1                      | NONE(GRAM_1/LM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_init.ram/dpram.dp1x1.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_init.ram/dpram.dp1x1.ram)      | 6     |
+PS2_Top/ready_shift_2              | NONE(PS2_Top/ascii_6)                                                                                                                                                                                                                               | 7     |
+VGA_Top/VGA1/vga_clk1              | BUFG                                                                                                                                                                                                                                                | 20    |
+VGA_Top/ROM2/N1                    | NONE(VGA_Top/ROM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp2x2.ram)    | 3     |
+VGA_Top/ROM1/N1                    | NONE(VGA_Top/ROM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram)| 1     |
+VGA_Top/RAM2/N1                    | NONE(VGA_Top/RAM2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram)| 1     |
+VGA_Top/RAM1/N1                    | NONE(VGA_Top/RAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram)    | 1     |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------+---------------------------+-------+
+Control Signal                                                 | Buffer(FF name)           | Load  |
+---------------------------------------------------------------+---------------------------+-------+
+rst                                                            | IBUF                      | 269   |
+_or0001(_or00011:O)                                            | NONE(VRAM_2/Addr_0)       | 25    |
+GRAM_2/Person_Addr_0__and0000(GRAM_2/Person_Addr_0__and00001:O)| NONE(GRAM_2/Person_Addr_0)| 1     |
+GRAM_2/Person_Addr_0__and0001(GRAM_2/Person_Addr_0__and00011:O)| NONE(GRAM_2/Person_Addr_0)| 1     |
+GRAM_2/Person_Addr_1__and0000(GRAM_2/Person_Addr_1__and00001:O)| NONE(GRAM_2/Person_Addr_1)| 1     |
+GRAM_2/Person_Addr_1__and0001(GRAM_2/Person_Addr_1__and00011:O)| NONE(GRAM_2/Person_Addr_1)| 1     |
+GRAM_2/Person_Addr_2__and0000(GRAM_2/Person_Addr_2__and00001:O)| NONE(GRAM_2/Person_Addr_2)| 1     |
+GRAM_2/Person_Addr_2__and0001(GRAM_2/Person_Addr_2__and00011:O)| NONE(GRAM_2/Person_Addr_2)| 1     |
+GRAM_2/Person_Addr_3__and0000(GRAM_2/Person_Addr_3__and00001:O)| NONE(GRAM_2/Person_Addr_3)| 1     |
+GRAM_2/Person_Addr_3__and0001(GRAM_2/Person_Addr_3__and00011:O)| NONE(GRAM_2/Person_Addr_3)| 1     |
+GRAM_2/Person_Addr_4__and0000(GRAM_2/Person_Addr_4__and00001:O)| NONE(GRAM_2/Person_Addr_4)| 1     |
+GRAM_2/Person_Addr_4__and0001(GRAM_2/Person_Addr_4__and00011:O)| NONE(GRAM_2/Person_Addr_4)| 1     |
+GRAM_2/Person_Addr_5__and0000(GRAM_2/Person_Addr_5__and00001:O)| NONE(GRAM_2/Person_Addr_5)| 1     |
+GRAM_2/Person_Addr_5__and0001(GRAM_2/Person_Addr_5__and00011:O)| NONE(GRAM_2/Person_Addr_5)| 1     |
+GRAM_2/Person_Addr_6__and0000(GRAM_2/Person_Addr_6__and00001:O)| NONE(GRAM_2/Person_Addr_6)| 1     |
+GRAM_2/Person_Addr_6__and0001(GRAM_2/Person_Addr_6__and00011:O)| NONE(GRAM_2/Person_Addr_6)| 1     |
+GRAM_2/Person_Addr_7__and0000(GRAM_2/Person_Addr_7__and00001:O)| NONE(GRAM_2/Person_Addr_7)| 1     |
+GRAM_2/Person_Addr_7__and0001(GRAM_2/Person_Addr_7__and00011:O)| NONE(GRAM_2/Person_Addr_7)| 1     |
+GRAM_2/Person_Addr_8__and0000(GRAM_2/Person_Addr_8__and00001:O)| NONE(GRAM_2/Person_Addr_8)| 1     |
+GRAM_2/Person_Addr_8__and0001(GRAM_2/Person_Addr_8__and00011:O)| NONE(GRAM_2/Person_Addr_8)| 1     |
+---------------------------------------------------------------+---------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.909ns (Maximum Frequency: 100.914MHz)
+   Minimum input arrival time before clock: 6.892ns
+   Maximum output required time after clock: 22.994ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.909ns (frequency: 100.914MHz)
+  Total number of paths / destination ports: 12334 / 716
+-------------------------------------------------------------------------
+Delay:               4.955ns (Levels of Logic = 4)
+  Source:            VRAM_2/wea_flag_1 (FF)
+  Destination:       VGA_Top/RAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram (RAM)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: VRAM_2/wea_flag_1 to VGA_Top/RAM1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE_1:C->Q          11   0.626   1.267  VRAM_2/wea_flag_1 (VRAM_2/wea_flag_1)
+     LUT3:I0->O            1   0.479   0.000  VGA_VAddr_in<9>_G (N529)
+     MUXF5:I1->O           2   0.314   0.804  VGA_VAddr_in<9> (VGA_VAddr_in<9>)
+     LUT3:I2->O            1   0.479   0.681  VGA_Top/VAddr<9>1 (VGA_Top/VAddr<9>)
+     begin scope: 'VGA_Top/RAM1'
+     begin scope: 'U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram'
+     RAMB16:ADDRA12            0.304          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram
+    ----------------------------------------
+    Total                      4.955ns (2.202ns logic, 2.753ns route)
+                                       (44.4% logic, 55.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'VGA_Top/VGA1/vga_clk1'
+  Clock period: 6.536ns (frequency: 153.001MHz)
+  Total number of paths / destination ports: 410 / 30
+-------------------------------------------------------------------------
+Delay:               6.536ns (Levels of Logic = 3)
+  Source:            VGA_Top/VGA1/h_count_0 (FF)
+  Destination:       VGA_Top/VGA1/h_count_0 (FF)
+  Source Clock:      VGA_Top/VGA1/vga_clk1 rising
+  Destination Clock: VGA_Top/VGA1/vga_clk1 rising
+
+  Data Path: VGA_Top/VGA1/h_count_0 to VGA_Top/VGA1/h_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             17   0.626   1.438  VGA_Top/VGA1/h_count_0 (VGA_Top/VGA1/h_count_0)
+     LUT4:I0->O            9   0.479   1.250  VGA_Top/VGA1/video_out111 (VGA_Top/Msub_VAddr_VGA_sub0000_cy<3>)
+     LUT4:I0->O           20   0.479   1.608  VGA_Top/VGA1/h_count_cmp_eq0000 (VGA_Top/VGA1/h_count_cmp_eq0000)
+     LUT2:I0->O            1   0.479   0.000  VGA_Top/VGA1/Mcount_h_count_eqn_01 (VGA_Top/VGA1/Mcount_h_count_eqn_0)
+     FDC:D                     0.176          VGA_Top/VGA1/h_count_0
+    ----------------------------------------
+    Total                      6.536ns (2.239ns logic, 4.297ns route)
+                                       (34.3% logic, 65.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 75 / 75
+-------------------------------------------------------------------------
+Offset:              6.892ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       GRAM_2/write_timing_6 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to GRAM_2/write_timing_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           304   0.715   2.959  rst_IBUF (rst_IBUF)
+     LUT3:I2->O            3   0.479   0.830  GRAM_2/Person_Addr_mux0000<2>11 (GRAM_2/N20)
+     LUT4:I2->O            7   0.479   0.906  GRAM_2/write_timing_and00011 (GRAM_2/write_timing_and0001)
+     FDE:CE                    0.524          GRAM_2/write_timing_0
+    ----------------------------------------
+    Total                      6.892ns (2.197ns logic, 4.695ns route)
+                                       (31.9% logic, 68.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA_Top/VGA1/vga_clk1'
+  Total number of paths / destination ports: 15590 / 5
+-------------------------------------------------------------------------
+Offset:              22.994ns (Levels of Logic = 13)
+  Source:            VGA_Top/VGA1/v_count_1 (FF)
+  Destination:       VGA_B (PAD)
+  Source Clock:      VGA_Top/VGA1/vga_clk1 rising
+
+  Data Path: VGA_Top/VGA1/v_count_1 to VGA_B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.626   1.201  VGA_Top/VGA1/v_count_1 (VGA_Top/VGA1/v_count_1)
+     LUT4:I0->O            8   0.479   0.980  VGA_Top/VGA1/Msub_pixel_y_xor<9>111 (VGA_Top/VGA1/N11)
+     LUT3:I2->O            1   0.479   0.740  VGA_Top/VGA1/Msub_pixel_y_xor<9>1_SW0 (N262)
+     LUT4:I2->O            2   0.479   0.745  VGA_Top/VGA1/Msub_pixel_y_xor<9>1 (VGA_Top/pixel_y<9>)
+     MULT18X18:A5->P9      1   2.506   0.976  VGA_Top/Mmult_VAddr_VGA_mult0001 (VGA_Top/VAddr_VGA_mult0001<9>)
+     LUT2:I0->O            1   0.479   0.000  VGA_Top/Madd_VAddr_VGA_lut<9> (VGA_Top/Madd_VAddr_VGA_lut<9>)
+     MUXCY:S->O            0   0.435   0.000  VGA_Top/Madd_VAddr_VGA_cy<9> (VGA_Top/Madd_VAddr_VGA_cy<9>)
+     XORCY:CI->O           2   0.786   1.040  VGA_Top/Madd_VAddr_VGA_xor<10> (VGA_Top/VAddr_VGA<10>)
+     LUT2:I0->O            1   0.479   0.000  VGA_Top/Mcompar_VColor_in_cmp_eq0000_lut<5> (VGA_Top/Mcompar_VColor_in_cmp_eq0000_lut<5>)
+     MUXCY:S->O            1   0.644   0.976  VGA_Top/Mcompar_VColor_in_cmp_eq0000_cy<5> (VGA_Top/Mcompar_VColor_in_cmp_eq0000_cy<5>)
+     LUT4:I0->O            1   0.479   0.851  VGA_Top/VGA2/VGA_B256_SW0 (N364)
+     LUT4:I1->O            3   0.479   1.066  VGA_Top/VGA2/VGA_B256 (VGA_Top/N4)
+     LUT3:I0->O            1   0.479   0.681  VGA_Top/VGA2/VGA_R1 (VGA_R_OBUF)
+     OBUF:I->O                 4.909          VGA_R_OBUF (VGA_R)
+    ----------------------------------------
+    Total                     22.994ns (13.738ns logic, 9.256ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1425 / 15
+-------------------------------------------------------------------------
+Offset:              16.537ns (Levels of Logic = 9)
+  Source:            clkcnt_17 (FF)
+  Destination:       SEGMENT<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: clkcnt_17 to SEGMENT<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.626   0.964  clkcnt_17 (clkcnt_17)
+     INV:I->O              2   0.479   0.745  Seg1/XLXI_2/XLXI_1/XLXI_1 (Seg1/XLXI_2/XLXI_1/XLXN_6)
+     AND2:I1->O            4   0.479   0.779  Seg1/XLXI_2/XLXI_1/XLXI_3 (Seg1/XLXI_2/XLXI_1/XLXN_40)
+     AND2:I1->O            1   0.479   0.681  Seg1/XLXI_2/XLXI_1/XLXI_18 (Seg1/XLXI_2/XLXI_1/XLXN_22)
+     OR4:I3->O            11   0.479   0.972  Seg1/XLXI_2/XLXI_1/XLXI_17 (Seg1/Hex<1>)
+     INV:I->O              8   0.479   0.921  Seg1/XLXI_1/XLXI_62 (Seg1/XLXI_1/XLXN_21)
+     AND4:I1->O            2   0.479   0.745  Seg1/XLXI_1/XLXI_5 (Seg1/XLXI_1/XLXN_41)
+     OR4:I3->O             1   0.479   0.681  Seg1/XLXI_1/XLXI_34 (Seg1/XLXI_1/XLXN_57)
+     OR2:I1->O             1   0.479   0.681  Seg1/XLXI_1/XLXI_41 (SEGMENT_0_OBUF)
+     OBUF:I->O                 4.909          SEGMENT_0_OBUF (SEGMENT<0>)
+    ----------------------------------------
+    Total                     16.537ns (9.367ns logic, 7.170ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.17 secs
+ 
+--> 
+
+Total memory usage is 225332 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   86 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

@@ -1,0 +1,7 @@
+verilog work "VGA_Scan.v"
+verilog work "VGA_Color.v"
+verilog work "ipcore_dir/VRAM.v"
+verilog work "ipcore_dir/Picture.v"
+verilog work "ipcore_dir/GRAM.v"
+verilog work "ipcore_dir/ASCII.v"
+verilog work "VGA_Show.v"
